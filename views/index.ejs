@@ -1,0 +1,86 @@
+<html>
+<head>
+  <script src="lib/d3.v4.3.0.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="../js/carousel.js"></script>
+  <script src="../js/carousel1.js"></script>
+  <script src="../js/carousel2.js"></script>
+  <style>
+    body {
+      font: 10px sans-serif;
+    }
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+    .dot {
+      stroke: none;
+      fill: #ABBD5C !important;
+    }
+
+  </style>
+  <script src="//d3js.org/d3.v3.min.js"></script>
+</head>
+<header>
+  <div class="row">
+  <div class="col s4 tac">
+    <button class="nav"><a href="/">Dashboard</a></button>
+  </div>
+    <div class="col s4 tac">
+      <button class="nav"><a href="/profile">Profile</a></button>
+  </div>
+    <div class="col s4 tac">
+      <button class="nav"><a href="/sync">Sync</a></button>
+  </div>
+   </div>
+</header>
+<main>
+  <div class="container">
+  <div class="row tac">
+  <img id="blueShape" src="/images/blueShape5.png">
+  </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 tac">
+            <div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-item white white-text" href="#one!">
+      <span id="scriptHere"></span>
+    </div>
+    <div class="carousel-item white-text" href="#two!">
+       <span id="script1Here"></span>
+    </div>
+    <div class="carousel-item white-text" href="#three!">
+      <span id="script2Here"></span>
+    </div>
+  </div>
+
+      </div><!--cols12-->
+    </div><!--row-->
+  </div><!--container-->
+  <container>
+  <div class="row" id ="buddies">
+   <div class="col s12 m4 tac">
+    <a href="/notifydad"><img id="user1" src="/images/userProfile1.png"></a>
+    <h4>Dad</h4>
+   </div>
+   <div class="col s12 m4 tac">
+       <a href="/notifyjason"><img id="user1" src="/images/user2.png"></a>
+        <h4>Jason</h4>
+   </div>
+   <div class="col s12 m4 tac">
+   <a href="notify"><img id="user1" src="/images/user3.png"></a>
+    <h4>Chloe</h4>
+   </div>
+  </div>
+  </container>
+</main>
+<footer>
+</footer>
+</html>

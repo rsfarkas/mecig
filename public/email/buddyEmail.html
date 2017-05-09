@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<style>
+	.tac {
+		text-align: center;
+	}
+	header { 
+		background-color: #5FB8CD;
+		height: 8vh;
+	}
+	h3{
+		font-size:2.20em;
+	}
+	h4{
+		font-size: 1.8em
+	}
+	body {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		font-family:'Source Sans Pro', sans-serif;;
+		color: #6A6969;
+	}
+	main {
+		flex: 1 0 auto;
+	}
+	footer { 
+		background-color: #5FB8CD;
+		height: 5vh;
+	}
+	p {
+		font-size: 1.5em;
+	}
+	li {
+		margin: 10px;
+		font-size: 1.5em;
+		font-weight: 300;
+		list-style-type: none;
+	}
+	hr {
+		border-top: .25px solid #E3E3E3;
+		border-bottom: none;
+		max-width: 85%;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	#logo {
+		margin-top:20px;
+		max-width: 150px;
+	}
+	#weeklyGraph {
+		max-width: 320px;
+		margin-top: 40px;
+	}
+	#ejuice {
+		max-width: 66px;
+	}
+</style>
+</head>
+<body>
+<div class="container">
+<header></header>
+</div>
+<main>
+	<div class="container">
+		<div class="section">
+			<div class="row">
+				<div class="col s12 tac">
+					<img id="logo" src="https://s3.us-east-2.amazonaws.com/smokeemails/logo.png" alt="logo">
+					<h3>Great work this week!</h3>
+				</div>
+			</div><!--row-->
+		</div><!--section-->     
+		<div class="section">
+			<div class="row">
+				<div class="col s12 tac">
+					<p>All of your hard work is paying off.<br> You guys make a great team! Check out your data from this week.</p>
+					<img id="weeklyGraph" src="https://s3.us-east-2.amazonaws.com/smokeemails/weeklyGraph.png" alt="Weekly Graph">
+					<hr>
+				</div>
+				<div class="col s12 tac">
+					<h4>Insights</h4>
+					<div class="col s12 tac">
+						<ul>
+							<li>Most frequent smoking time: <span style="color:#5F7BBD; font-weight:400">3:00pm</span></li>
+							<li>Equivelant cigarettes smoked: <span style="color:#5F7BBD; font-weight:400">16</span></li>
+							<li>Days saved of life: <span style="color:#5F7BBD; font-weight:400">2</span></li>
+						</ul>
+					<hr>
+					</div>
+				</div>
+				<div class="col s12 tac">
+					<h4>E-liquid Recommendation</h4>
+					<img id="ejuice" src="https://s3.us-east-2.amazonaws.com/smokeemails/eJuice.png" alt="e-juice">
+					<p>Strength: 6mg</p>
+				</div>
+			</div><!--row-->
+		</div><!--section--> 
+	</div><!--container-->
+</main> 
+<div class="container">
+<footer></footer>
+</div><!--container-->   
+</body>
+</html>
